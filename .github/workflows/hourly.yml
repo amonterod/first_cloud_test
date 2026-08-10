@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Ejecutar script
-        run: python script.py
+        run: python src/main.py
       - name: Commit si hay cambios
         run: |
           git config user.name "amonterod"
