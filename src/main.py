@@ -15,7 +15,9 @@ OUTPUT_FILE = "hora.json"
 
 
 def leer_hora():
-    return datetime.datetime.utcnow().isoformat() + "Z"
+    ahora_utc = datetime.datetime.now(datetime.timezone.utc)
+    ahora_madrid = ahora_utc.astimezone(MADRID_TZ)
+    return ahora_madrid.isoformat()
 
 
 def escribir_fichero(hora):
