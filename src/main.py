@@ -3,6 +3,7 @@ import json
 import logging
 import os
 import sys
+from zoneinfo import ZoneInfo
 
 # Observabilidad: logs estructurados, no solo "OK"
 logging.basicConfig(
