@@ -12,6 +12,7 @@ logging.basicConfig(
 log = logging.getLogger("hora_sistema")
 
 OUTPUT_FILE = "hora.json"
+MADRID_TZ = ZoneInfo("Europe/Madrid")
 
 
 def leer_hora():
